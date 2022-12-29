@@ -19,10 +19,10 @@ public class Main {
                     int moveY = j-toX[k];
                     int moveX = i - toY[k];
                     if(moveX >= 0 && moveY >= 0 && moveX < N && moveY < N) {
-                        if(arr[moveX][moveY] >= arr[i][j]){
-                            chk = true;
-                            break;
-                        }
+                            if(arr[moveX][moveY] >= arr[i][j]) {
+                                chk = true;
+                                break;
+                            }
                     }
                 }
                 if(!chk) {
